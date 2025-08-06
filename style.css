@@ -1,0 +1,169 @@
+/* Estilização Geral do Corpo da Página */
+body {
+        font-family: "Shrikhand", serif;
+        font-weight: 400;
+        font-style: normal;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* fundo */
+    color: #333; /* texto  */
+}
+
+/* Cabeçalho */
+header {
+    background-color: #222; /* Fundo */
+    color: #fff; /* Texto  */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00bcd4; /* Cor de destaque ao passar o mouse */
+}
+
+/* Seção de Banner */
+#banner {
+    background-color: #c0e8ff; /* Cor de fundo diferenciada para o banner */
+    text-align: center;
+    padding: 4rem 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+}
+
+
+#banner h2 {
+    font-size: 3rem;
+    color: #23546e;
+    margin-bottom: 1rem;
+}
+
+#banner p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: justify;
+
+}
+
+/* Seção de Produtos */
+#produtos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 2rem 3rem 2rem;
+}
+
+#produtos h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.produto-item {
+    background-color: #fff; /* Fundo branco */
+    border-radius: 10px; /* Bordas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Sombra */
+    padding: 1.5rem;
+    text-align: center;
+    width: 300px; /* Largura fixa para os itens */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.produto-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.produto-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.produto-item h3 {
+    font-size: 1.5rem;
+    color: #555;
+    margin-bottom: 0.5rem;
+}
+
+.produto-item p {
+    font-size: 1.3rem;
+    color: #00796b;
+    font-weight: bold;
+}
+
+/* Rodapé */
+footer {
+    background-color: #222; /* Fundo escuro */
+    color: #fff;
+    text-align: center; /* Texto centralizado */
+    padding: 1.5rem 0;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+/* Design Responsivo Básico */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #banner h2 {
+        font-size: 2rem;
+    }
+
+    #banner p {
+        font-size: 1rem;
+    }
+
+    #produtos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .produto-item {
+        width: 80%; /* Ajusta a largura dos produtos em telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        margin: 0 10px;
+    }
+}
